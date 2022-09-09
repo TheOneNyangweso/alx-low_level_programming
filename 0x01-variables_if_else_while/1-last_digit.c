@@ -19,7 +19,7 @@ int main(void)
 		printf("%s %d is %d and is greater than 5\n", s, n, a);
 	if (a == 0)
 		printf("%s %d is %d and is 0\n", s, n, a);
-	if (a < 6)
+	if (a < 6 && a == 0)
 		printf("%s %d is %d and is less than 6 and not 0:\n", s, n, a);
 	return (0);
 }
