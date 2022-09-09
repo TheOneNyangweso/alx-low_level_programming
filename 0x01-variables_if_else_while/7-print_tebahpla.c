@@ -12,7 +12,7 @@ int main(void)
 	char a = 'z';
 
 	/* Looping through the ASCII characters of a-z */
-	while (a <= 'z' && a => 'a')
+	while (a <= 'z' && a >= 'a')
 	{
 		putchar(a);
 		a--;
