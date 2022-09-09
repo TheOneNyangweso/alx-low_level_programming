@@ -14,7 +14,7 @@ int main(void)
 	/* Looping through 0-F */
 	while (a <= 0xF)
 	{
-		printf("%d", a);
+		printf("%x", a);
 		a++;
 	}
 	putchar('\n');
