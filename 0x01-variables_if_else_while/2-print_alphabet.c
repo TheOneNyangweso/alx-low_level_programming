@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/*
- * main: function main loops through lowercase a up to lowercase z
- * Return: null
+/**
+ * main- main functionloops through lowercase a up to lowercase z
+ * and outputs the results
+ * Return: null i.e 0
  */
 
 int main(void)
@@ -18,5 +19,5 @@ int main(void)
 	}
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
