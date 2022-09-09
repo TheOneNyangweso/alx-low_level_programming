@@ -14,7 +14,7 @@ int main(void)
 	/* Looping through 0-9 */
 	while (a <= 9)
 	{
-		int putchar(a);
+		putchar(a);
 		a++;
 	}
 	putchar('\n');
