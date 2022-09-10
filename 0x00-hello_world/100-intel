@@ -1,2 +1,2 @@
 #!/bin/bash
-cat $CFILE|gcc -S > main.c
+gcc -S CFILE > main.c
