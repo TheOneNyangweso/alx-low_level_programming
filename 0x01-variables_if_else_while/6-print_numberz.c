@@ -9,12 +9,12 @@
 int main(void)
 {
 	/* Variable initialization */
-	int a = 0;
+	int a = '0';
 
 	/* Looping through 0-9 */
-	while (a <= 9)
+	while (a <= '9')
 	{
-		int putchar(int a);
+		putchar(a);
 		a++;
 	}
 	putchar('\n');
