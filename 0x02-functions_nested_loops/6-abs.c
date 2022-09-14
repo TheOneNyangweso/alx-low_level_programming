@@ -9,7 +9,7 @@
  */
 int _abs(int a)
 {
-	int a, result;
+	int result;
 
 	result = pow(a, 2);
 	a = result / a;
