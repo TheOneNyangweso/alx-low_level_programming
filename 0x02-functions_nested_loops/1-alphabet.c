@@ -7,16 +7,7 @@
  */
 int main(void)
 {
-	int letters;
-	char a[] = "abcdefghijklmnopqrstuvwxyz";
-
-	letters = 0;
-
-	while (letters < 26)
-	{
-		_putchar(a[letters]);
-		letters++;
-	}
+	print_alphabet();
 	_putchar('\n');
 	return (0);
 }
