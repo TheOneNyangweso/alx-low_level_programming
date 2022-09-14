@@ -14,9 +14,10 @@ int main(void)
 
 	while (i < 8)
 	{
-		putchar('a[i]');
+		putchar(a[i]);
 		i++;
-	}	
+	}
+	_putchar('\n')
 	return (0);
 }
 int _putchar(char c)
