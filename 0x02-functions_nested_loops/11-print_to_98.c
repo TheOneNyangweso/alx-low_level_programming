@@ -2,15 +2,15 @@
 #include <unistd.h>
 #include "main.h"
 
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	int a;
 	
-	a = print_to_98(n);
-	while(a <= 98)
+	a = 98;
+	while(a >= n)
 	{
-		printf("%d, ", a);
-		a++;
+		printf("%d, ", n);
+		n++;
 	}
 	_putchar('\n');
 }
