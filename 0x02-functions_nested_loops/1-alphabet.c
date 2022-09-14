@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	char letters;
-	char a[] = "";
+	int letters;
+	char a[] = "abcdefghijklmnopqrstuvwxyz";
 
-	letters = 'a';
+	letters = 0;
 
-	while (letters <= 'z')
+	while (letters < 26)
 	{
 		_putchar(a[letters]);
 		letters++;
