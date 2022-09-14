@@ -15,19 +15,24 @@ void print_to_98(int n)
 
 	a = n;
 	if (a > 98)
-		while  (98 <= a)
+		while  (98 < a)
 		{
-			printf("%d, ", a);
-			a++;
+			printf("%d", a);
+			_putchar(',')
+			printf(" ");
+			a--;
 		}
-        else if (a < 98)
-		while  (a <= 98)
+	else if (a < 98)
+		while  (a < 98)
 		{
-			printf("%d, ", a);
+			printf("%d", a);
+			_putchar(',');
+			printf(" ")
 			a++;
 		}
 	else
-		printf("%d, ", a);
-
+		printf("%d", a);
+		exit (0);
+	printf("98");
 	_putchar('\n');
 }
