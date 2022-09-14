@@ -4,10 +4,13 @@
 
 void print_to_98(int n)
 {
-	while(n <= 98)
+	int a;
+
+	a = n;
+	while(a <= 98)
 	{
-		printf("%d, ", n);
-		n++;
+		printf("%d, ", a);
+		a++;
 	}
 	_putchar('\n');
 }
