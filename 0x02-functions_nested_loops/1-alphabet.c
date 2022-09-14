@@ -15,7 +15,7 @@ int main(void)
 	while (letters <= 'z')
 	{
 		_putchar(a[letters]);
-		letter++;
+		letters++;
 	}
 	_putchar('\n');
 	return (0);
