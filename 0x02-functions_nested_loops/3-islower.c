@@ -9,10 +9,7 @@
 
 int _islower(int c)
 {
-	int a;
-	c = a;
-
-	if ('a' <= a && 'z' >= a)
+	if ('a' <= c && 'z' >= c)
 		return (1);
 	else
 		return (0);
