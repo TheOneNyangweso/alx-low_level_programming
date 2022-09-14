@@ -8,14 +8,14 @@
 int main(void)
 {
 	char letters;
-	char a[];
+	char a[] = "";
 
-	letters =  'a';
+	letters = 'a';
 
 	while (letters <= 'z')
 	{
 		_putchar(a[letters]);
-		i++;
+		letter++;
 	}
 	_putchar('\n');
 	return (0);
