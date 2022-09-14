@@ -7,15 +7,16 @@
  */
 int main(void)
 {
-	char a;
+	int i;
+	char a[] = "_putchar";
 
-	a = 'a';
+	i = 0;
 
-	while (a <= 'z')
+	while (i < 8)
 	{
-		_putchar(a);
-		a++;
+		_putchar(a[i]);
+		i++;
 	}
-	_putchar('\n')
+	_putchar('\n');
 	return (0);
 }
