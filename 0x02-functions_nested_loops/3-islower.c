@@ -3,7 +3,7 @@
 
 /**
  * _islower-checks if char variable c is lower.
- * int c- parameter for c
+ * @c: char to check:
  * Return: 1 if c is lowercase else return is set to 0
  */
 
