@@ -14,10 +14,20 @@ void print_to_98(int n)
 	int a;
 
 	a = n;
-	while (a <= 98 || 98 <= a)
-	{
+	if (a > 98)
+		while  (98 <= a)
+		{
+			printf("%d, ", a);
+			a++;
+		}
+        else if (a < 98)
+		while  (a <= 98)
+		{
+			printf("%d, ", a);
+			a++;
+		}
+	else
 		printf("%d, ", a);
-		a++;
-	}
+
 	_putchar('\n');
 }
