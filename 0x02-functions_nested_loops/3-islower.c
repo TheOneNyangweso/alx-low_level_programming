@@ -10,7 +10,7 @@
 int _islower(int c)
 {
 	int a;
-	a = _islower(int c);
+	a = c;
 
 	if (int('a') <= a && a >= int('z'))
 		return (1);
