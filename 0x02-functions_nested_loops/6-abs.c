@@ -11,7 +11,7 @@ int _abs(int a)
 {
 	int result;
 
-	result = pow(a, 2);
+	result = a * a;
 	a = result / a;
 
 	return (a);
