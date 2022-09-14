@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet- prints lowercase alphabet 10 times, followed by newline.
+ * print_alphabet_x10- prints lowercase alphabet 10 times, followed by newline.
  * Return: 0 i.e null after successful completion.
  */
 void print_alphabet_x10(void)
@@ -19,6 +19,7 @@ void print_alphabet_x10(void)
 			_putchar(a);
 			a++;
 		}
+		_putchar('\n');
 		count++;
 	}
 	_putchar('\n');
