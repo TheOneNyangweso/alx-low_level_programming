@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * time_table- function that prints multiplication table 0<=x<10.
+ * times_table- function that prints multiplication table 0<=x<10.
  * void- parameter requires no specific data type
  * Return: void.
  */
 
-void time_table(void)
+void times_table(void)
 {
 	int a, b, c;
 
