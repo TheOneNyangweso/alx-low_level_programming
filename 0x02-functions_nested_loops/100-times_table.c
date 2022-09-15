@@ -9,7 +9,7 @@
 
 void print_times_table(int n)
 {
-	int a, b, c;
+	int a, b, c, d;
 
 	a = 0;
 
@@ -20,11 +20,17 @@ void print_times_table(int n)
 		while (b <= n)
 		{
 			c = a * b;
-
-			if (c < (n + 1))
+			d = n * 2;
+			if (c < d)
 			{
 				_putchar(',');
 				_putchar(32);
+				_putchar(32);
+				_putchar(c + '0');
+			}
+			else if (c == 10)
+			{
+				_putchar(',');
 				_putchar(32);
 				_putchar(c + '0');
 			}
