@@ -4,12 +4,12 @@
 /**
  * time_table- function that prints multiplication table 0<=x<10.
  * void- parameter requires no specific data type
- * Return: a * b, which is the full multiplication table.
+ * Return: void.
  */
 
 void time_table(void)
 {
-	int a, b;
+	int a, b, c;
 
 	a = 0;
 
@@ -18,10 +18,13 @@ void time_table(void)
 		b = 0;
 		while (b < 10)
 		{
-			return (a * b);
+			c = a * b;
+			_putchar(c);
+			_putchar(',');
+			_putchar(' ');
 			b++;
 		}
-		_putchar('\n')
+		_putchar('\n');
 		a++;
 	}
 }
