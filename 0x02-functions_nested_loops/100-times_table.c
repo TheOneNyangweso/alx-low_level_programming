@@ -17,11 +17,11 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 		b = 1;
-		while (b < 10)
+		while (b < n)
 		{
 			c = a * b;
 
-			if (c <= 9)
+			if (c <= n)
 			{
 				_putchar(',');
 				_putchar(32);
