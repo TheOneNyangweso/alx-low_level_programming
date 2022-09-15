@@ -17,7 +17,7 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 		b = 1;
-		while (b < n)
+		while (b <= n)
 		{
 			c = a * b;
 
