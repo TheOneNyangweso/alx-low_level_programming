@@ -1,5 +1,5 @@
 /**
- * Header file for 0x04-more_functions_nested_loops projects
+ * Header file for 0x04-more_functions_nested_loops ALX projects
  */
 
 int _putchar(char c);
