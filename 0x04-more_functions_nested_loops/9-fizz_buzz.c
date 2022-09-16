@@ -3,15 +3,12 @@
 #include <math.h>
 #include "main.h"
 
-void fizz_buzz(void);
+/**
+ * main - main function
+ * Return: 0
+ */
 
-int main (void)
-{
-	fizz_buzz();
-	return (0);
-}
-
-void fizz_buzz(void)
+int main(void)
 {
 	int a, b, c, d;
 	char fizz[] = "Fizz", buzz[] = "Buzz";
