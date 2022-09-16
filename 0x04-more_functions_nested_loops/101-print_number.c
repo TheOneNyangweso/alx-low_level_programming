@@ -2,6 +2,7 @@
 
 /**
  * print_number-function prints an integer.
+ * @n: parameter variable for function print_number
  * Return: null
  */
 

@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include "main.h"
 
+/**
+ * main- main function prints largest prime number in the input
+ * Return: 0.
+ */
+
 int main(void)
 {
 	int a;
