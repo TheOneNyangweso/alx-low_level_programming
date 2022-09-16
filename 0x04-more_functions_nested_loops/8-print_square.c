@@ -21,7 +21,7 @@ void print_square(int size)
 			b++;
 		}
 		if (count != size)
-			_putchaar(35);
+			_putchar(35);
 		count++
 	}
 	_putchar('\n');
