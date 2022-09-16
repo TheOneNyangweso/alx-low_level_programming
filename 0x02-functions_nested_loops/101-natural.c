@@ -11,9 +11,9 @@ int main(void)
 	int b, c;
 
 	for (b = 1; b < 1024; b++)
-	
+	{
 		if ((b % 3) == 0 || (b % 5) == 0)
-			c = b + c;
+			c = c + b;
 	}
 	printf("%d\n", c);
 	return (0);
