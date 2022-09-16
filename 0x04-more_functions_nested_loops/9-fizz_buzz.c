@@ -18,7 +18,7 @@ int main(void)
 	{
 		b = a % 3;
 		c = a % 5;
-		d = b + c;
+		d = a % 15;
 		if (d == 0)
 			printf("%s ", f_buzz);
 		else if (b == 0)
