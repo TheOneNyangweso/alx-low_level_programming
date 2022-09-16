@@ -21,7 +21,8 @@ void print_diagonal(int n)
 			b++;
 		}
 		_putchar('\\');
-		_putchar('\n');
+		if (count != n)
+			_putchar('\n');
 		count++;
 	}
 	_putchar('\n');
