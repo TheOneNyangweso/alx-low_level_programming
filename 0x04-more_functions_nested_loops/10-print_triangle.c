@@ -17,18 +17,18 @@ void print_triangle(int size)
 		b = size;
 		while (b >= 0)
 		{
-			putchar(' ');
+			_putchar(' ');
 			b--;
 		}
 		c = 0;
 		while (c <= size)
 		{
-			putchar(35);
+			_putchar(35);
 			c++;
 		}
 		if (count != size)
-			putchar('\n');
+			_putchar('\n');
 		count++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
