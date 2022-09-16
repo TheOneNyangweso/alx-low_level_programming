@@ -10,7 +10,7 @@ int main(void)
 {
 	int b, c;
 
-	for (b = 1; c < 1024; b++)
+	for (b = 1; b < 1024; b++)
 	
 		if ((b % 3) == 0 || (b % 5) == 0)
 			c = b + c;
