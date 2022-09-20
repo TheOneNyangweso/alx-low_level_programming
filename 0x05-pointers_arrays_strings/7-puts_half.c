@@ -24,9 +24,9 @@ void puts_half(char *str)
 			_putchar('\n');
 			break;
 		}
-		if ((result % 2) == 0 && a >= (result / 2))
+		if ((result % 2) == 0 && a > (result / 2))
 			_putchar(str[a]);
-		else if ((result % 2) != 0 && a >= n)
+		else if ((result % 2) != 0 && a > n)
 			_putchar(str[a]);
 	}
 }
