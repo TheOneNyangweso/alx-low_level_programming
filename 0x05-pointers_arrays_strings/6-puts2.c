@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts2 - function prints string, followef by newline. Similar
+ * puts2 - function prints string, followef by newline. Similar
  * to puts function in standard library.
  * @str: pointer character variable
  */
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int a, count, result = 0;
 
