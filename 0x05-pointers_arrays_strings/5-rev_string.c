@@ -7,9 +7,6 @@
 void rev_string(char *s)
 {
 	int a, b, count, result;
-	char *ch;
-
-	ch = &s;
 
 	count = 0;
 	while (*(s + count) != '\0')
@@ -22,8 +19,6 @@ void rev_string(char *s)
 	for (a--; a >= 0; a--)
 	{
 		for (b = 0; b <= result; b++)
-			ch[b] = s[a];
+			s[b] = _putchar(s[a]);
 	}
-
-	*s = ch;
 }
