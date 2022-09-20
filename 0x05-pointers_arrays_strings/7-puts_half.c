@@ -15,24 +15,18 @@ void puts_half(char *str)
 		count++;
 	}
 
-	n = (result - 1) / 2;
-
 	for (a = 0; a <= result; a++)
 	{
+		n = (result - 1) / 2;
+
 		if (str[a] == '\0')
 		{
 			_putchar('\n');
 			break;
 		}
-		if (result % 2 == 0)
-		{
-			if (a >= (result / 2))
+		if ((result % 2) == 0 && a >= (result / 2))
 			_putchar(str[a]);
-		}
-		else
-		{
-			if (a >= n)
-				_putchar(str[a]);
-		}
+		else if ((result % 2) != 0 && a >= n)
+			_putchar(str[a]);
 	}
 }
