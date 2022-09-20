@@ -20,10 +20,10 @@ void print_rev(char *s)
 		if (a == 0)
 		{
 			_putchar(s[a]);
-			_putchar('\n');
 			break;
 		}
 		else
 			_putchar(s[a]);
 	}
+	_putchar('\n');
 }
