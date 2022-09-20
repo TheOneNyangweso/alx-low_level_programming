@@ -17,5 +17,13 @@ void _puts(char *str)
 	}
 
 	for (a = 0; a <= result; a++)
-		_putchar(str[a]);
+	{
+		if (str[a] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		else
+			_putchar(str[a]);
+	}
 }
