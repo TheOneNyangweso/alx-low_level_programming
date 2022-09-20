@@ -17,12 +17,12 @@ void print_rev(char *s)
 
 	for (a = result; a >= 0; a--)
 	{
-		if (str[a] == '\0')
+		if (s[a] == '\0')
 		{
 			_putchar('\n');
 			break;
 		}
 		else
-			_putchar(str[a]);
+			_putchar(s[a]);
 	}
 }
