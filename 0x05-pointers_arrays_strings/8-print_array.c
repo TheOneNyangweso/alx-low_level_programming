@@ -18,6 +18,6 @@ void print_array(int *a, int n)
 		else
 			printf("%d\n", *(a + size));
 		if (n < 0)
-			printf("\n";)
+			printf("\n");
 	}
 }
