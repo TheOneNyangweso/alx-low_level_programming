@@ -16,14 +16,14 @@ void puts2(char *str)
 		count++;
 	}
 
-	for (a = 0; a <= result; a += 2)
+	for (a = 0; a <= result; a++)
 	{
 		if (str[a] == '\0')
 		{
 			_putchar('\n');
 			break;
 		}
-		else
+		else if (a % 2 == 0)
 			_putchar(str[a]);
 	}
 }
