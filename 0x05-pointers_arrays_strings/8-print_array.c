@@ -16,8 +16,7 @@ void print_array(int *a, int n)
 		if (size != (n - 1))
 			printf("%d, ", *(a + size));
 		else
-			printf("%d\n", *(a + size));
-		if (n < 0)
-			printf("\n");
+			printf("%d", *(a + size));
 	}
+	_putchar(10);
 }
