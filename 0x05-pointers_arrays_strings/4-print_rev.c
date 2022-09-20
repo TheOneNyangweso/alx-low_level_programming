@@ -17,8 +17,9 @@ void print_rev(char *s)
 
 	for (a = result; a >= 0; a--)
 	{
-		if (s[a] == '\0')
+		if (a == 0)
 		{
+			_putchar(s[a]);
 			_putchar('\n');
 			break;
 		}
