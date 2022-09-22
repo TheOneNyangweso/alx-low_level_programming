@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: src string argument
  * @src: dest string argument
+ * @n: test integer
  * Return: pointer to the resulting strinf dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int a, b, count;
 
@@ -16,7 +17,7 @@ char *_strcat(char *dest, char *src)
 	for (b = 0; *(src + b); b++)
 		;
 
-	for (a = 0; a < b; a++)
+	for (a = 0; a < b && a < n; a++)
 	{
 		*(dest + count) = *(src + a);
 		count++;
