@@ -3,7 +3,7 @@
 /**
  * _memset - function similar to memset function in standard library
  * @s: memory area pointed by s
- * @b: constanr var passed to function
+ * @b: constant var passed to function
  * @n: size of memory to be filled in bytes
  * Return: a pointer to memory area s
  */
