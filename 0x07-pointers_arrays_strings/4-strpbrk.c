@@ -2,7 +2,7 @@
 
 /**
  * _strpbrk - function similar to strpbrk function in standard library
- * @s: returns pointer to s
+ * @s: string
  * @accept: string to be matched
  * Return: a pointer to to the byte matched in s
  */
@@ -17,9 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		while (*(accept + i) != '\0')
 		{
 			if (*(s + a) == *(accept + i))
-			{
-				return (s);
-			}
+				return (s + a);
 			i++;
 		}
 		a++;
