@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - returns string length
- * @s: string input
+ * _sqrt_recursion - returns natural square root of number input
+ * @n: input number
  * Return: integer length of string input.
  */
-int _strlen_recursion(char *s)
+int _sqrt_recursion(int n)
 {
-	if (*s == '\0')
+	if (*n == '\0')
 		return (0);
 	else
-		return (1 + _strlen_recursion(s + 1));
+		return (1 + int _sqrt_recursion(n + 1));
 }

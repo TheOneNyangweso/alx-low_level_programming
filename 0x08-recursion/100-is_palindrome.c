@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _puts_recursion - function prints string
+ * is_palindrome - function checks if string is palindrome
  * @s: input string
- * Return: null
+ * Return: 1 if true, else 0
  */
 
-void _puts_recursion(char *s)
+int is_palindrome(char *s)
 {
 	if (*s != '\0')
 	{
 		_putchar(*s);
-		_puts_recursion(s + 1);
+		is_palindrome(s + 1);
 	}
 	else
 		_putchar('\n');
