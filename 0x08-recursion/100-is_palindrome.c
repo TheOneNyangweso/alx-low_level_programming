@@ -15,4 +15,6 @@ int is_palindrome(char *s)
 	}
 	else
 		_putchar('\n');
+
+	return (1);
 }
