@@ -8,5 +8,32 @@
 
 void print_number(int n)
 {
-	_putchar(n);
+	int a, b, count = 1;
+
+	a = n;
+
+	if (a >= 0 && a <= 9)
+		putchar(a + '0');
+	else if (a < 0)
+		a = a * -1;
+
+	while (a > 9)
+	{
+		a = a / 10;
+		count = count * 10;
+	}
+
+	a = n;
+	while (count >= 1 && !(a >= 0 && a <= 9))
+	{
+		if (a < 0)
+		{
+			putchar('-');
+			a = a * -1;
+		}
+
+		b = (a / count) % 10;
+		putchar(b + '0');
+		count = count / 10;
+	}
 }
