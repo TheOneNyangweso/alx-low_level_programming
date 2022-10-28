@@ -17,7 +17,7 @@ int main(void)
 		{
 			if (b != a)
 			{
-				if (((b + a) == (a + b)) && (a < b))
+				if (a < b)
 				{
 					putchar(a + '0');
 					putchar(b + '0');
