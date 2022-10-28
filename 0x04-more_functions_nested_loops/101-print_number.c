@@ -13,7 +13,7 @@ void print_number(int n)
 	a = n;
 
 	if (a >= 0 && a <= 9)
-		putchar(a + '0');
+		_putchar(a + '0');
 	else if (a < 0)
 		a = a * -1;
 
@@ -28,12 +28,12 @@ void print_number(int n)
 	{
 		if (a < 0)
 		{
-			putchar('-');
+			_putchar('-');
 			a = a * -1;
 		}
 
 		b = (a / count) % 10;
-		putchar(b + '0');
+		_putchar(b + '0');
 		count = count / 10;
 	}
 }
