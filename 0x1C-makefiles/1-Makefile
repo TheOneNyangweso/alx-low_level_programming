@@ -3,7 +3,7 @@
 all: school
 
 CC = gcc				# compiler to use
-SRC = $(wildcard *.c)	# .c files
+SRC = ${wildcard *.c}	# .c files
 
-school: school.o
-	gcc main.c school.c -o school
+school:					# $@ below matches the target - school in this case
+	@${CC} ${SRC} -o $@	
