@@ -5,7 +5,7 @@ NAME = school
 RM = rm
 
 all: ${OBJ}
-	${CC} ${SRC} -o ${NAME}
+	-${CC} ${SRC} -o ${NAME}
 
 # $@ below matches the target - school in this case
 # $< above/below matches the 1st prerequisite. If the target is derived from an implicit rule, $< corresponds
@@ -15,10 +15,10 @@ all: ${OBJ}
 # $^: Holds the names of all prerequisites (including duplicates), separated by spaces.
 
 clean:
-	${RM} -f *~ ${NAME}
+	-${RM} -f *~ ${NAME}
 
 oclean:
-	${RM} -f *.o ${OBJ}
+	-${RM} -f ${OBJ}
 
 fclean: clean oclean
 
