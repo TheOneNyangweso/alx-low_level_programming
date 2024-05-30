@@ -15,10 +15,10 @@ all: ${OBJ}
 # $^: Holds the names of all prerequisites (including duplicates), separated by spaces.
 
 clean:
-	${RM} -rvf *~ *.swp ${NAME}
+	${RM} -f *~ ${NAME}
 
 oclean:
-	${RM} -rvf *.o ${OBJ}
+	${RM} -f *.o ${OBJ}
 
 fclean: clean oclean
 
