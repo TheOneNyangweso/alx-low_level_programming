@@ -1,9 +1,5 @@
-.PHONY: all
-
-all: school
-
 CC = gcc				# compiler to use
 SRC = ${wildcard *.c}	# .c files
 
-school:					# $@ below matches the target - school in this case
-	@${CC} ${SRC} -o $@	
+all:					# $@ below matches the target - school in this case
+	@${CC} ${SRC} -o school
