@@ -1,14 +1,7 @@
-CC = gcc				# compiler to use
-SRC = main.c school.c	# .c files
-OBJ := $(SRC:%.c=%.o)	# .o files
-NAME = school			# name of executable
+CC=gcc
+SRC= main.c school.c
+OBJ=$(SRC:.c=.o)
+NAME=school
 
-all:
-	${CC} ${SRC} -o ${NAME}
-
-# $@ below matches the target - school in this case 
-# $< above/below matches the 1st prerequisite. If the target is derived from an implicit rule, $< corresponds
-# to the first prerequisite added by that implicit rule.
-# $?: Contains the names of all prerequisites that are newer than the target, separated by 
-# spaces. Useful for handling only changed prerequisites.
-# $^: Holds the names of all prerequisites (including duplicates), separated by spaces.
+all : $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
