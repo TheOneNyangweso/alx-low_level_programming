@@ -3,8 +3,8 @@ SRC = main.c school.c	# .c files
 OBJ := $(SRC:%.c=%.o)	# .o files
 NAME = school			# name of executable
 
-all: ${OBJ}
-	${CC} ${OBJ} -o ${NAME}
+all:
+	${CC} ${SRC} -o ${NAME}
 
 # $@ below matches the target - school in this case 
 # $< above/below matches the 1st prerequisite. If the target is derived from an implicit rule, $< corresponds
