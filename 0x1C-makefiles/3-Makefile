@@ -1,15 +1,11 @@
-.PHONY: all
-
-all: school
-
 CC = gcc
-SRC = ${wildcard *.c}	
-OBJ := $(SRC:%.c=%.o)	
+SRC = main.c school.c	
+OBJ := $(SRC:.c=.o)	
 NAME = school
 RM = rm
 
-${NAME}: ${OBJ}
-	${CC} -lm $^ -o $@
+all: ${OBJ}
+	${CC} ${SRC} -o ${NAME}
 
 # $@ below matches the target - school in this case
 # $< above/below matches the 1st prerequisite. If the target is derived from an implicit rule, $< corresponds
@@ -17,9 +13,6 @@ ${NAME}: ${OBJ}
 # $?: Contains the names of all prerequisites that are newer than the target, separated by
 # spaces. Useful for handling only changed prerequisites.
 # $^: Holds the names of all prerequisites (including duplicates), separated by spaces.
-
-%.o: %.c
-	@${CC} -c $< -o $@
 
 clean:
 	${RM} -rvf *~ *.swp ${NAME}
