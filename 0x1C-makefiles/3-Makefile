@@ -2,19 +2,19 @@
 
 all: school
 
-CC = gcc				# compiler to use
-SRC = ${wildcard *.c}	# .c files
-OBJ := $(SRC:%.c=%.o)	# .o files
-NAME = school			# name of executable
-RM = rm 				# The program to delete files
+CC = gcc
+SRC = ${wildcard *.c}	
+OBJ := $(SRC:%.c=%.o)	
+NAME = school
+RM = rm
 
 ${NAME}: ${OBJ}
 	${CC} -lm $^ -o $@
 
-# $@ below matches the target - school in this case 
+# $@ below matches the target - school in this case
 # $< above/below matches the 1st prerequisite. If the target is derived from an implicit rule, $< corresponds
 # to the first prerequisite added by that implicit rule.
-# $?: Contains the names of all prerequisites that are newer than the target, separated by 
+# $?: Contains the names of all prerequisites that are newer than the target, separated by
 # spaces. Useful for handling only changed prerequisites.
 # $^: Holds the names of all prerequisites (including duplicates), separated by spaces.
 
