@@ -1,6 +1,6 @@
 CC = gcc				# compiler to use
 SRC = main.c school.c	# .c files
-OBJ = $(SRC:.c=.o)		# .o files
+OBJ = ${SRC:.c=.o}	# .o files
 NAME = school			# name of executable
 
 all: ${OBJ}
