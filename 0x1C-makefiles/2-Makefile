@@ -4,7 +4,7 @@ OBJ := $(SRC:%.c=%.o)	# .o files
 NAME = school			# name of executable
 
 all: ${OBJ}
-	${CC} $^ -o ${NAME}
+	${CC} ${OBJ} -o ${NAME}
 
 # $@ below matches the target - school in this case 
 # $< above/below matches the 1st prerequisite. If the target is derived from an implicit rule, $< corresponds
@@ -12,6 +12,3 @@ all: ${OBJ}
 # $?: Contains the names of all prerequisites that are newer than the target, separated by 
 # spaces. Useful for handling only changed prerequisites.
 # $^: Holds the names of all prerequisites (including duplicates), separated by spaces.
-
-%.o: %.c
-	@${CC} -c $< -o $@
