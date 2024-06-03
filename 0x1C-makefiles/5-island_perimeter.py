@@ -44,7 +44,7 @@ def island_perimeter(grid):
     if count_of_ones <= 0:
         return 0
     if count_of_ones == 1:
-        return 1
+        return 4
     else:
         length = [ls.count(1) for ls in grid if ls.count(1) > 0]
         perimeter = (max(length) + len(length)) * 2
