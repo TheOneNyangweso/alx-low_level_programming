@@ -33,20 +33,27 @@ def island_perimeter(grid):
     """function that returns the perimeter of the island described in grid.
 
     Args:
-        grid (arr): a list of list of integers.
+            grid (arr): a list of list of integers.
 
     Returns:
-        perimeter of the island.
+            perimeter of the island.
     """
     perimeter = 0
     count_of_ones = sum([a.count(1) for a in grid])
 
     if count_of_ones <= 0:
         return 0
-    if count_of_ones == 1:
-        return 4
-    else:
-        length = [ls.count(1) for ls in grid if ls.count(1) > 0]
-        perimeter = (max(length) + len(length)) * 2
+
+    for row in range(len(grid)):
+        for col in range(len(grid[0])):
+            if grid[row][col] == 1:
+                perimeter += 4
+                # Removing the 2 connected sides
+                if row > 0 and grid[row - 1][col] == 1:
+                    perimeter -= 2
+                if col > 0 and grid[row][col-1] == 1:
+                    perimeter -= 2
+    # length = [ls.count(1) for ls in grid if ls.count(1) > 0]
+    # perimeter = (max(length) + len(length)) * 2
 
     return perimeter
