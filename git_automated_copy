@@ -1,11 +1,9 @@
 #!/bin/bash
 git add .
 
-q_marks='"'
-
 echo "Commit message;"
 read message
 
-git commit -m $q_marks"$message"$q_marks
+git commit -m "$message"
 git push
 git status
